@@ -1,4 +1,4 @@
-package dad.javafx.holamundo.fxml;
+package dad.holamundo.fxml;
 
 import java.io.IOException;
 import java.net.URL;
@@ -36,10 +36,14 @@ public class HolaMundoController implements Initializable {
 	@FXML 
 	private Label saludoLabel;
 	
-	public HolaMundoController() throws IOException {
-		FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/HolaMundoView.fxml"));
-		loader.setController(this);
-		loader.load();
+	public HolaMundoController() {
+		try { 
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/HolaMundoView.fxml"));
+			loader.setController(this);
+			loader.load();
+		} catch (IOException e) {
+			throw new RuntimeException(e);
+		}
 	}
 
 	@Override

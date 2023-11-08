@@ -1,4 +1,4 @@
-package dad.javafx.holamundo.fxml;
+package dad.holamundo.fxml;
 
 import javafx.application.Application;
 import javafx.scene.Scene;

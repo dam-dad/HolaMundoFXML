@@ -1,4 +1,4 @@
-package dad.javafx.holamundo.fxml;
+package dad.holamundo.fxml;
 
 public class Main {
 
